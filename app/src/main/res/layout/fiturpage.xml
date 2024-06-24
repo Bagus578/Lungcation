@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFitur"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back">
+
+        <TextView
+            android:id="@+id/toolbarTitleFitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fitur Dalam Dataset"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Konten yang dapat digulir dengan NestedScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarFitur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fiturPage"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Gender [object] : Jenis Kelamin M untuk laki-laki dan F untuk perempuan."
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Age [int64] : Usia pasien dalam tahun"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Smoking [int64]: status merokok pasien [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Yellow fingers: apakah memiliki gejala jari kuning [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Anxiety [int64] : apakah pasien memiliki ganguan cemas [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Peer pressure [int64] : apakah pasien mendapatkan pengaruh sosial untuk merokok [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Chronic Disease [int64] : apakah pasien memiliki riwayat penyakit kronis [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Fatigue [int64] : apakah pasien mudah merasa lelah [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. Allergy [int64] : apakah pasien memiliki alergi [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10. Wheezing [int64] : apakah pasien ketika bernafas bunyi [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11. Alcohol [int64] : apakah pasien merokok [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12. Coughing [int64] : apakah pasien sering batuk [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13. Shortness of Breath [int64] : apakah pasien sering sesak nafas [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14. Swallowing Difficulty [int64] : apakah pasien kesulitan menelas [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15. Chest pain [int64] : apakah sering merasa sakit dada [YES=2, NO=1]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16. Lung Cancer [object] : hasil klasifikasi apakah pasien terkena penyakit kanker paru-paru atai tidak [YES, NO]"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

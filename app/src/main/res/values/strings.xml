@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Lungcation</string>
+
+    <string name="toolbar">Lungcation</string>
+
+    <string name="detailinfo">
+        Aplikasi ini digunakan untuk memprediksi apakah pasien terkena penyakit kanker paru-paru atau tidak dengan mengajukan beberapa pertanyaan sebagai fitur dalam memprediksi penyakit tersebut. Dataset yang dipakai diambil dari website Kaggle.
+
+        Adapun cara penggunaan aplikasinya dengan mengisi data pasien pada halaman simulasi model.
+        \n\n
+        1. Buka halaman simulasi model.
+        \n\n
+        2. Isi data pasien yang diminta, seperti usia, jenis kelamin, riwayat merokok, dll.
+        \n\n
+        3. Tekan tombol Prediksi untuk melihat hasilnya.
+        \n\n
+        4. Hasil prediksi akan ditampilkan apakah pasien kemungkinan besar terkena kanker paru-paru atau tidak.
+        \n\n
+        Pastikan semua data yang dimasukkan akurat untuk mendapatkan hasil prediksi yang tepat. Aplikasi ini menggunakan model machine learning yang telah dilatih dengan dataset dari Kaggle untuk memprediksi penyakit kanker paru-paru.
+    </string>
+
+    <string name="dspage">
+        Tabel diatas berisi data dari dataset yang digunakan. Dataset yang dipakai diambil dari Kaggle.
+        \n\nAdapun ukuran dari dataset tersebut terdiri dari 16 kolom dan 309 baris. Klik link dibawah untuk membuka dataset yang digunakan.
+    </string>
+
+    <string name="q1">GenderSelector</string>
+    <string-array name="gender_array">
+        <item>Perempuan</item>
+        <item>Laki-laki</item>
+    </string-array>
+
+    <string name="qbool">BoolQuestion</string>
+    <string-array name="bool_array">
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+
+    <string name="kaggle_link">Go to <a href="https://www.kaggle.com/datasets/jillanisofttech/lung-cancer-detection">Kaggle Lung Cancer Dataset</a></string>
+    <string name="kaggleLink">"https://www.kaggle.com/datasets/jillanisofttech/lung-cancer-detection"</string>
+
+    <string name="fiturPage">
+        Terdapat 16 fitur yang dipakai didalam aplikasi ini. Dominan dari fitur yang dipakai berisi pertanyaan yang memiliki jawaban YA atau Tidak.
+    </string>
+
+    <string name="modelPage1">
+        Model aplikasi ini dibuat menggunakan model jaringan saraf tiruan (Neural Network). Model Sequential yang diberikan adalah jaringan neural sederhana yang terdiri dari empat lapisan dense (fully connected). Model ini disusun secara berurutan, dengan setiap lapisan terhubung penuh ke lapisan berikutnya. Lapisan pertama adalah lapisan dense dengan 16 neuron, diikuti oleh lapisan kedua dan ketiga yang masing-masing memiliki 8 neuron, dan akhirnya lapisan keempat yang memiliki 1 neuron sebagai lapisan output.
+        \n\nSetiap neuron di lapisan dense menghitung outputnya sebagai fungsi linear dari inputnya ditambah bias, yang kemudian diaktifkan menggunakan fungsi aktivasi yang ditentukan (biasanya ReLU untuk lapisan tengah dan sigmoid atau linear untuk lapisan output). Jumlah parameter yang dilatih dalam model ini adalah 473, termasuk bobot dan bias untuk semua lapisan.
+        \n\nSelain itu, model menggunakan optimizer Adam untuk mempercepat pelatihan dan fungsi binary_crossentropy untuk mengukur kesalahan klasifikasi yang mana hanya memiliki 2 output. Model ini juga di evaluasi menggunakan metrics accuracy untuk mengukur tingkat akurasinya.
+        \n\nDibawah ini terdapat plot dari model yang sudah dibuat dan juga skema dari model jaringan saraf tiruan (neural network) yang dipakai:
+    </string>
+
+</resources>
